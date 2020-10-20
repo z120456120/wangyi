@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('./font/iconfont.eot');
+  src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('./font/iconfont.woff2') format('woff2'),
+      url('./font/iconfont.woff') format('woff'),
+      url('./font/iconfont.ttf') format('truetype'),
+      url('./font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 14px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+        *{padding: 0; margin: 0;}
+        ul{list-style: none;}
+        #login{width: 384px; height: 400px;  position: fixed; margin: auto; background: #fff;}
+        #login #dlu{width: 306px; height: 60px;   margin-left: 29px; position: relative;}
+        #login #dlu ul{width: 100%; height: 18px;  line-height: 18px; display: flex;
+        position: absolute; bottom: 10px;}
+        #login #dlu ul li{flex: 1; text-align: center; font-size: 18px; cursor: pointer;}
+        #login #dlu ul li:nth-child(1){border-right: 1px solid #ccc; color: #666;}
+        #login p{position: absolute; right: 0; top: 0;}
+        #login #dlua{width: 300px; height: 227px;  margin: 0 auto;
+        margin-top:30px; }
+        #login #dlua div:not(:nth-child(3)){border: 1px solid #ccc; height: 36px; margin-bottom: 10px;}
+        #login #dlua div span{width: 35px; height: 30px; display: inline-block; text-align: center; font-size: 22px; color: #ccc; 
+    margin-top:3px; line-height: 30px; border-right: 1px solid #ccc;}  
+        #login #dlua div input{width: 262px; height: 36px; outline-style: none; border: 0; float: right; color: #999;}
+        #login #dlua button{width: 100%; height: 48px;  background: rgb(180, 160, 120);
+        border: 0; margin-top:36px; color: #fff; border-radius: 2px; font-size: 18px; cursor: pointer;} 
+        #login p{width: 24px; height: 24px; position: absolute; right: 4px; top: 4px;
+        cursor: pointer; background:url(./images/bj-icon2.png) no-repeat; background-position-y:  -175px ;}
+    </style>
+</head>
+<body>
+  
+    <div id="login">
+        <div id="dlu">
+            <ul>
+                <li>手机号登录</li>
+                <li>邮箱登录</li>
+            </ul>
+        </div>
+        <p></p>
+        <div id="dlua">
+            <div>
+                <span class="iconfont">&#xe654;</span>
+                <input type="text" placeholder="邮箱账号">
+            </div>
+            <div>
+                <span class="iconfont">&#xe63a;</span>
+                <input type="text" placeholder="请输入密码">
+            </div>
+            <div id="dlub"><button>登 录</button></div>
+    </div>
+    </div>
+    <script>
+//         var btn = document.querySelector('#btn');
+//         btn.onlick = function(){
+//           var login = document.createElement('div');
+//                 login.id = 'login';
+//                 login.innerHTML = ` 
+// <div id="dlu">
+//         <ul>
+//             <li>手机号登录</li>
+//             <li>邮箱登录</li>
+//         </ul>
+//     </div>
+//     <p></p>
+//     <div id="dlua">
+//         <div>
+//             <span class="iconfont">&#xe654;</span>
+//             <input type="text" placeholder="邮箱账号">
+//         </div>
+//         <div>
+//             <span class="iconfont">&#xe63a;</span>
+//             <input type="text" placeholder="请输入密码">
+//         </div>
+//         <div id="dlub"><button>登 录</button></div>
+// </div>`;
+//         document.body.append(login);
+        
+//         }
+    </script>
+</body>
+</html>
